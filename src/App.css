@@ -1,0 +1,56 @@
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide Scrollbar by Default */
+::-webkit-scrollbar {
+  width: 8px; /* Slightly thicker for a modern look */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Scrollbar Track (Invisible) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Rounded & Transparent Scrollbar */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3); /* Subtle transparent dark */
+  border-radius: 50px; /* Fully rounded */
+  transition: background 0.3s ease, opacity 0.3s ease-in-out;
+}
+
+/* Show scrollbar only while scrolling */
+body:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5); /* Slightly darker on hover */
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+/* JavaScript-like Effect: Auto-hide Scrollbar */
+body {
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body:hover::-webkit-scrollbar {
+  display: block;
+}
+
+::selection {
+  background-color: #d6b3ff;
+  color: #000;
+}
