@@ -69,9 +69,9 @@ export default function Navbar() {
               <a href="mailto:vrgroup.insta@gmail.com" className="block px-4 py-2 hover:bg-gray-100 flex items-center">
                 <RiMailFill className="mr-2 text-[#5a189a]" size={20} /> vrgroup.insta@gmail.com
               </a>
-              <a href="https://instagram.com/_vrgroup" className="block px-4 py-2 hover:bg-gray-100 flex items-center">
+              {/* <a href="https://instagram.com/_vrgroup" className="block px-4 py-2 hover:bg-gray-100 flex items-center">
                 <RiInstagramFill className="mr-2 text-[#5a189a]" size={20} /> @_vrgroup
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function Navbar() {
             vrgroup.insta@gmail.com
           </span>
         </a>
-        <a
+        {/* <a
           href="https://instagram.com/_vrgroup"
           className="relative bg-pink-600 text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center group"
         >
@@ -114,7 +114,7 @@ export default function Navbar() {
           <span className="absolute left-full ml-2 bg-gray-800 text-white text-sm px-2 py-1 rounded hidden group-hover:block transition duration-300">
             @_vrgroup
           </span>
-        </a>
+        </a> */}
       </div>
     </>
   );
